@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>长夜将尽，来日可期</title>
+<title>山水不相逢</title>
   
   <audio  src="SS.mp3" autoplay loop>该浏览器不支持audio属性</audio>
 
@@ -102,41 +102,8 @@ footer a:hover {
 
 <div class="container">
   <div id="timer"></div>
-  <h1>NMET terminal counter</h1>
+  <h1>今生勿复见</h1>
 </div>
-
-
-<script>
-const fourthOfJuly = new Date("June 8, 2019 17:00:00").getTime();
-
-// countdown
-let timer = setInterval(function() {
-
-  // get today's date
-  const today = new Date().getTime();
-
-  // get the difference
-  const diff = fourthOfJuly - today;
-
-  // math
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-  // display
-  document.getElementById("timer").innerHTML =
-    "<div class=\"days\"> \
-  <div class=\"numbers\">" + days + "</div>days</div> \
-<div class=\"hours\"> \
-  <div class=\"numbers\">" + hours + "</div>hours</div> \
-<div class=\"minutes\"> \
-  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
-<div class=\"seconds\"> \
-  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
-</div>";
-
-}, 1000);</script>
 
 </body>
 </html>
